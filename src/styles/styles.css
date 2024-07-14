@@ -1,0 +1,363 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8b400;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.logo-image {
+    position: absolute; /* Position the image within the header */
+    top: 30%; /* Adjust vertically as needed */
+    transform: translateY(-50%); /* Center vertically */
+    left: 0px; /* Adjust horizontally as needed */
+    height: auto; /* Ensure height adjusts proportionally */
+    max-height: 80%; /* Limit maximum height relative to header */
+}
+.auth-links {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+  
+  .auth-links .login-btn,
+  .auth-links .signup-btn {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  .auth-links .login-btn {
+    background-color: #000;
+    color: #fff;
+  }
+  .auth-links .signup-btn {
+    background-color: #000;
+    color: #fff;
+  }
+  .login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #333;
+  }
+  
+  .signup-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .signup-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .signup-btn:hover {
+    background-color: #333;
+  }
+  
+main {
+    padding: 20px;
+}
+.images {
+    display: flex; /* Use flexbox for horizontal arrangement */
+    justify-content: space-around; /* Distribute items evenly with space around them */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.images img {
+    max-width: 45%; /* Limit maximum width of each image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Footer social media icons */
+footer div {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer img {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+.image-gallery img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Recipe item styles */
+.recipe-item {
+    margin-bottom: 20px;
+}
+
+.recipe-item img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.recipe-item h3 {
+    margin-top: 0;
+}
+
+.recipe-item ul {
+    padding-left: 20px;
+}
+
+
+
+/* Contact page styles */
+#contact {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact textarea {
+    height: 150px;
+}
+
+#contact button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #45a049;
+}
+
+#contact button[type="button"] {
+    background-color: #f44336;
+    margin-left: 10px;
+}
+
+#contact button[type="button"]:hover {
+    background-color: #e53935;
+}
+
+.form-messages {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+/* About page specific styles */
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.content h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.blog-section {
+    background-color: #f8b400;
+    color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.blog-section h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.blog-wrap {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-wrap h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.blog-wrap p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.blog-wrap a {
+    color: #f8b400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-wrap a:hover {
+    text-decoration: underline;
+}
